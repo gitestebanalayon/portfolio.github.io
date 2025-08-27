@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esteban Alayón - Desarrollador Fullstack</title>
+    <meta name="description"
+        content="Portafolio profesional de Esteban Alayón, desarrollador fullstack especializado en API REST, páginas web estáticas y dinámicas.">
+    <meta name="keywords" content="desarrollador, fullstack, API REST, Vue.js, Django, Nest.js, PostgreSQL">
+    <meta name="author" content="Esteban Alayón">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Esteban Alayón - Desarrollador Fullstack">
+    <meta property="og:description"
+        content="Portafolio profesional de Esteban Alayón, desarrollador fullstack especializado en API REST, páginas web estáticas y dinámicas.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div style="width: 40px;" class="logo-icon">
+                        <img style="width: 100%; border-radius: 100%;" src="./assets/img/author.png" alt="">
+                    </div>
+                    <span class="logo-text">Esteban Alayón</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a>
+                    <a href="#sobre-mi" class="nav-link" data-section="sobre-mi">Sobre mí</a>
+                    <a href="#habilidades" class="nav-link" data-section="habilidades">Habilidades</a>
+                    <a href="#proyectos" class="nav-link" data-section="proyectos">Proyectos</a>
+                    <a href="#contacto" class="nav-link" data-section="contacto">Contacto</a>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i data-lucide="moon" class="theme-icon"></i>
+                    </button>
+                </nav>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-controls">
+                    <button class="theme-toggle" id="themeToggleMobile">
+                        <i data-lucide="moon" class="theme-icon"></i>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i data-lucide="menu" class="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#inicio" class="nav-link-mobile active" data-section="inicio">Inicio</a>
+                <a href="#sobre-mi" class="nav-link-mobile" data-section="sobre-mi">Sobre mí</a>
+                <a href="#habilidades" class="nav-link-mobile" data-section="habilidades">Habilidades</a>
+                <a href="#proyectos" class="nav-link-mobile" data-section="proyectos">Proyectos</a>
+                <a href="#contacto" class="nav-link-mobile" data-section="contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <!-- Content -->
+                    <div class="hero-text">
+                        <div class="hero-intro">
+                            <div class="accent-line"></div>
+                            <h1 class="hero-title">Esteban Alayón</h1>
+                            <div class="hero-badge">
+                                <span class="badge">FULLSTACK</span>
+                                <div class="status-dot"></div>
+                            </div>
+                        </div>
+
+                        <p class="hero-description">
+                            Desarrollador especializado en creación de <strong>Sistemas Web</strong>,
+                            <strong>Páginas Web Estáticas y Dinámicas</strong>.
+                        </p>
+
+                        <div class="social-section">
+                            <p class="social-label">Redes sociales:</p>
+                            <div class="social-links">
+                                <a href="https://www.tiktok.com/@estebanalayon7" target="_blank"
+                                    rel="noopener noreferrer" class="social-link" title="TikTok">
+                                    <i data-lucide="music"></i> <!-- Usamos el ícono de música para TikTok -->
+                                </a>
+                                <a href="https://github.com/gitestebanalayon" target="_blank" rel="noopener noreferrer"
+                                    class="social-link" title="GitHub">
+                                    <i data-lucide="github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/esteban-alayon-318a1424a/" target="_blank"
+                                    rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                                    <i data-lucide="linkedin"></i>
+                                </a>
+                                <a href="mailto:estebanalayon7@gmail.com" class="social-link" title="Email">
+                                    <i data-lucide="mail"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="scrollToSection('contacto')">Contactar</button>
+                            <button class="btn btn-outline" onclick="scrollToSection('proyectos')">Ver
+                                Proyectos</button>
+                        </div>
+
+                        <!-- <div class="brand-section">
+                            <p class="brand-label">Mi marca personal:</p>
+                            <div class="brand-card">
+                                <div class="brand-icon">
+                                    <span>N</span>
+                                </div>
+                                <div class="brand-info">
+                                    <p class="brand-name">Netzgo</p>
+                                    <p class="brand-desc">Desarrollo Web Profesional</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <!-- Image -->
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <div class="image-bg"></div>
+                            <div class="image-card">
+                                <img src="./assets/img/author.png" alt="Esteban Alayón" class="profile-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre-mi" class="about">
+            <div class="container">
+                <h2 class="section-title">Sobre mí</h2>
+                <div class="about-content">
+                    <div class="about-card">
+                        <h3 class="about-subtitle">Formación:</h3>
+                        <p class="about-text">
+                            Graduado en Licenciatura en Informática. Mi formación combina fundamentos sólidos
+                            con un enfoque práctico en desarrollo web.
+                        </p>
+                        <div class="about-icons">
+                            <i data-lucide="graduation-cap"></i>
+                            <i data-lucide="book"></i>
+                            <i data-lucide="award"></i>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <h3 class="about-subtitle">Experiencia:</h3>
+                        <p class="about-text">
+                            Más de 3 años en proyectos de backend y frontend para sectores
+                            como educación, aplicaciones interactivas y en la creación
+                            de APIs.
+                        </p>
+                        <div class="about-icons">
+                            <i data-lucide="briefcase"></i>
+                            <i data-lucide="code"></i>
+                            <i data-lucide="users"></i>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <h3 class="about-subtitle">Habilidades Técnicas:</h3>
+                        <p class="about-text">
+                            Competencias en Django, Nest.js, Vue.js y PostgreSQL. Experiencia en
+                            autenticación, servicios de APIs y manejo de control de
+                            versiones.
+                        </p>
+                        <div class="about-icons">
+                            <i data-lucide="settings"></i>
+                            <i data-lucide="database"></i>
+                            <i data-lucide="git-branch"></i>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <h3 class="about-subtitle">Desarrollo Frontend:</h3>
+                        <p class="about-text">
+                            Especializado en crear interfaces de usuario responsivas y accesibles.
+                            Experiencia con Vue.js, frameworks CSS modernos como Bootstrap y plantillas como tabler.io.
+                        </p>
+                        <div class="about-icons">
+                            <i data-lucide="layout"></i>
+                            <i data-lucide="smartphone"></i>
+                            <i data-lucide="palette"></i>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <h3 class="about-subtitle">Desarrollo Backend:</h3>
+                        <p class="about-text">
+                            Desarrollo de APIs robustas y escalables con NestJS, Django Ninja, entre otros.
+                            Implementación de sistemas de autenticación y autorización seguros.
+                        </p>
+                        <div class="about-icons">
+                            <i data-lucide="server"></i>
+                            <i data-lucide="shield"></i>
+                            <i data-lucide="network"></i>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <h3 class="about-subtitle">Base de Datos:</h3>
+                        <p class="about-text">
+                            Diseño y optimización de esquemas de bases de datos relacionales.
+                            Experiencia con PostgreSQL, MySQL para diferentes casos de uso y herramientas como
+                            dbdiagram.io.
+                        </p>
+                        <div class="about-icons">
+                            <i data-lucide="database"></i>
+                            <i data-lucide="hard-drive"></i>
+                            <i data-lucide="bar-chart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="habilidades" class="skills">
+            <div class="container">
+                <h2 class="section-title">Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon1.png" alt="html"></div>
+                        <span class="skill-name">HTML</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon2.png" alt="css"></div>
+                        <span class="skill-name">CSS</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon3.png" alt="js"></div>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon14.png" alt="bootstrap"></div>
+                        <span class="skill-name">Bootstrap</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon15.png" alt="typescript"></div>
+                        <span class="skill-name">TypeScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon4.png" alt="vue"></div>
+                        <span class="skill-name">Vue.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon16.png" alt="node"></div>
+                        <span class="skill-name">Node.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon17.png" alt="express"></div>
+                        <span class="skill-name">Express.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon13.png" alt="nest"></div>
+                        <span class="skill-name">Nest.js</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon7.png" alt="python"></div>
+                        <span class="skill-name">Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon18.png" alt="django"></div>
+                        <span class="skill-name">Django</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon19.png" alt="django rest framework"></div>
+                        <span class="skill-name">Django Rest Framework</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon20.png" alt="django ninja"></div>
+                        <span class="skill-name">Django Ninja</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon6.png" alt="php"></div>
+                        <span class="skill-name">PHP</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon9.png" alt="postgres"></div>
+                        <span class="skill-name">PostgreSQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon8.png" alt="mysql"></div>
+                        <span class="skill-name">MySQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon10.png" alt="git"></div>
+                        <span class="skill-name">Git</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon11.png" alt="git hub"></div>
+                        <span class="skill-name">GitHub</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon21.png" alt="vs code"></div>
+                        <span class="skill-name">VS Code</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon22.png" alt="dbeaver"></div>
+                        <span class="skill-name">Dbeaver</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon25.png" alt="dbdiagram"></div>
+                        <span class="skill-name">Dbdiagram.io</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon24.png" alt="draw.io"></div>
+                        <span class="skill-name">Draw.io</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon23.png" alt="trello"></div>
+                        <span class="skill-name">Trello</span>
+                    </div>
+                    <div class="skill-item">
+                        <div style="width: 50px;" class="skill-icon"><img style="width: 100%;"
+                                src="./assets/img/icon27.png" alt="thunder client"></div>
+                        <span class="skill-name">Thunder Client</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="proyectos" class="projects">
+            <div class="container">
+                <h2 class="section-title">Proyectos</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/img/projects/electronica.png" alt="Proyecto Electrónica">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Electrónica</span>
+                            <h3 class="project-title">Proyecto personal</h3>
+                            <p class="project-description">
+                                Sistema web para la gestión de artículos y
+                                venta de productos electrónicos.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/img/projects/ingenieria.png" alt="Proyecto Electrónica">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Electrónica</span>
+                            <h3 class="project-title">Proyecto personal</h3>
+                            <p class="project-description">
+                                Sistema web para la gestión de artículos y
+                                venta de productos electrónicos.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/img/projects/vacaciones.png" alt="Proyecto Electrónica">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Electrónica</span>
+                            <h3 class="project-title">Proyecto personal</h3>
+                            <p class="project-description">
+                                Sistema web para la gestión de artículos y
+                                venta de productos electrónicos.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <span>estebanalayon7@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <span>+58 412 711 6352</span>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" rows="2" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+
+                <div class="footer">
+                    <p>Copyright © <span id="year"></span> Esteban Alayón - Portafolio. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
