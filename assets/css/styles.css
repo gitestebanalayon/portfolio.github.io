@@ -662,8 +662,8 @@ button {
 
 .project-card {
   background-color: var(--card);
+  position: relative;
   border-radius: var(--border-radius);
-  overflow: hidden;
   border: 1px solid var(--border);
   transition: all 0.3s ease;
 }
@@ -673,16 +673,65 @@ button {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
+.project-card:nth-child(1)::before {
+  content: "En desarrollo";
+  position: absolute;
+  background: var(--accent);
+  transform: rotate(40deg);
+  top: 15px;
+  right: -24px;
+  padding: 1px 10px;
+
+  font-weight: bold;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.project-card:nth-child(2)::before {
+  content: "Completado";
+  position: absolute;
+  background: var(--terciary);
+  transform: rotate(40deg);
+  top: 12px;
+  right: -23px;
+  padding: 1px 10px;
+
+  font-weight: bold;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.project-card:nth-child(3)::before {
+  content: "En desarrollo";
+  position: absolute;
+  background: var(--accent);
+  transform: rotate(40deg);
+  top: 15px;
+  right: -24px;
+  padding: 1px 10px;
+
+  font-weight: bold;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
 .project-image {
   width: 100%;
   height: 200px;
-  overflow: hidden;
 }
 
 .project-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
 
 .project-content {
