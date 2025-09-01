@@ -197,7 +197,7 @@ class ContactFormManager {
 
     // Here you would typically send the data to a server
     // For now, we'll just show an alert
-    alert("¡Gracias por tu mensaje! Te contactaré pronto.")
+    alert("¡El servicio de correo actualmente esta en desarrollo!")
 
     // Reset form
     e.target.reset()
