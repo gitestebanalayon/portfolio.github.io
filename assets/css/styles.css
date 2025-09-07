@@ -777,22 +777,22 @@ button {
   padding: 1.5rem;
 }
 
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--foreground);
+}
+
 .project-category {
-  display: inline-block;
+  width: fit-content;
   background-color: var(--primary);
   color: var(--primary-foreground);
   padding: 0.25rem 0.75rem;
   border-radius: 1rem;
   font-size: 0.75rem;
   font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.project-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  color: var(--foreground);
+  margin: 0.75rem 0 1rem 0;
 }
 
 .project-description {
